@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Vishwakarma | Certifications</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo"><a href="index.html">YV</a></div>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="certifications.html" class="active">Certifications</a>
+            <a href="achievements.html" class="nav-link">Achievements</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="glow-orb glow-orb-2" style="top: 40%; right: 20%;"></div>
+
+    <!-- MAIN -->
+    <section class="section" style="padding-top: 10rem;">
+        <div class="container fade-in">
+
+            <h1 class="page-title">Certifications &amp; Training</h1>
+            <p class="section-subtitle">
+                A collection of certifications validating my skills in Data Science, Development, and Core CS concepts.
+            </p>
+
+            <!-- FILTER -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCert('all')">All</button>
+                <button class="filter-btn" onclick="filterCert('data')">Data / AI</button>
+                <button class="filter-btn" onclick="filterCert('programming')">Programming</button>
+                <button class="filter-btn" onclick="filterCert('web')">Web</button>
+                <button class="filter-btn" onclick="filterCert('core')">Core CS</button>
+                <button class="filter-btn" onclick="filterCert('general')">General</button>
+            </div>
+
+            <!-- GRID -->
+            <div class="cert-grid">
+
+                <!-- ===== 🔥 TOP PICKS ===== -->
+
+                <!-- 1. DSA in C++ -->
+                <div class="cert-card featured" data-category="programming"
+                    onclick="openCert('certificates/DSA in CPP.png')">
+                    <div class="cert-image">
+                        <img src="certificates/DSA in CPP.png" alt="DSA in C++ Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>DSA in C++</h3>
+                        <p class="issuer">iamneo</p>
+                        <div class="tags">
+                            <span>DSA</span><span>C++</span><span>Algorithms</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 2. Java -->
+                <div class="cert-card featured" data-category="programming" onclick="openCert('certificates/Java.png')">
+                    <div class="cert-image">
+                        <img src="certificates/Java.png" alt="Java Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Java Programming</h3>
+                        <p class="issuer">iamneo</p>
+                        <div class="tags">
+                            <span>Java</span><span>OOP</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 3. Android -->
+                <div class="cert-card featured" data-category="programming"
+                    onclick="openCert('certificates/Android Development Ceritificate.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/AndroidDevelopment.png" alt="Android Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Android Development</h3>
+                        <p class="issuer">LPU</p>
+                        <div class="tags">
+                            <span>Kotlin</span><span>XML</span><span>Mobile</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 4. C++ -->
+                <div class="cert-card featured" data-category="programming" onclick="openCert('certificates/CPP.png')">
+                    <div class="cert-image">
+                        <img src="certificates/CPP.png" alt="C++ Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>C++ Programming</h3>
+                        <p class="issuer">iamneo</p>
+                        <div class="tags">
+                            <span>C++</span><span>OOP</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 5. C -->
+                <div class="cert-card featured" data-category="programming" onclick="openCert('certificates/C.png')">
+                    <div class="cert-image">
+                        <img src="certificates/C.png" alt="C Programming Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>C Programming</h3>
+                        <p class="issuer">iamneo</p>
+                        <div class="tags">
+                            <span>C</span><span>Basics</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 6. Responsive Web Design -->
+                <div class="cert-card featured" data-category="web"
+                    onclick="openCert('certificates/Responsive Web Designer.png')">
+                    <div class="cert-image">
+                        <img src="certificates/Responsive Web Designer.png" alt="Responsive Web Design Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Responsive Web Design</h3>
+                        <p class="issuer">freeCodeCamp</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>Responsive</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- 7. DAX in Power BI -->
+                <div class="cert-card featured" data-category="data"
+                    onclick="openCert('certificates/DataCamp Intro to DAX power BI.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/DataCamp Intro to DAX power BI.png" alt="DAX Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>DAX in Power BI</h3>
+                        <p class="issuer">DataCamp</p>
+                        <div class="tags">
+                            <span>DAX</span><span>Power BI</span><span>Analytics</span>
+                        </div>
+                    </div>
+                    <span class="badge">Top</span>
+                </div>
+
+                <!-- ===== REST (by importance) ===== -->
+
+                <!-- SheKnows AI -->
+                <div class="cert-card" data-category="data" onclick="openCert('certificates/SheKnowsAI.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/SheKnows AI.png" alt="SheKnowsAI Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>SheKnows AI</h3>
+                        <p class="issuer">SheKnowsAI</p>
+                        <div class="tags">
+                            <span>AI</span><span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt Engineering -->
+                <div class="cert-card" data-category="data"
+                    onclick="openCert('certificates/ChatGPT-4 Prompt Engineering.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Personality Development.png" alt="Prompt Engineering">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Prompt Engineering (LLMs)</h3>
+                        <p class="issuer">Infosys</p>
+                        <div class="tags">
+                            <span>AI</span><span>GenAI</span><span>LLM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development SkillCraft -->
+                <div class="cert-card" data-category="web"
+                    onclick="openCert('certificates/SkillCraftCertificate_WebDevelopment.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/FrontEndDevelopmentSkillCraft.png" alt="Web Development Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Web Development</h3>
+                        <p class="issuer">SkillCraft</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Development Great Learning -->
+                <div class="cert-card" data-category="web"
+                    onclick="openCert('certificates/FrontEndDevelopmentHTML.png')">
+                    <div class="cert-image">
+                        <img src="certificates/FrontEndDevelopmentHTML.png" alt="Frontend HTML Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Frontend Development</h3>
+                        <p class="issuer">Great Learning</p>
+                        <div class="tags">
+                            <span>HTML</span><span>Web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bits & Bytes of Networking -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/The Bits and Bytes of Computer Networking.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Bits &amp; Bytes of Networking.png"
+                            alt="Bits and Bytes of Networking Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Bits &amp; Bytes of Networking</h3>
+                        <p class="issuer">Google / Coursera</p>
+                        <div class="tags">
+                            <span>Networking</span><span>Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fundamentals of Network Communication -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/Fundamentals of Network Communication.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Fundamentals of Network Communication.png"
+                            alt="Network Communication Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Network Communication</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>Networking</span><span>TCP/IP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peer-to-Peer Protocols & LAN -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/Peer-to-Peer Protocols and Local Area Networks.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Peer-to-Peer Protocols &amp; LAN.png"
+                            alt="Peer-to-Peer Protocols Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Peer-to-Peer Protocols &amp; LAN</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>Networking</span><span>LAN</span><span>P2P</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TCP/IP & Advanced Topics -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/TCP IP and Advanced Topics.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/TCPIP &amp; Advanced Topics.png" alt="TCP/IP Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>TCP/IP &amp; Advanced Topics</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>TCP/IP</span><span>Networking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Communications -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/Computer Communications.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Computer Communications.png" alt="Computer Communications Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Computer Communications</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>Networking</span><span>Comm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/Introduction to Hardware and Operating Systems.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Introduction to Hardware and Operating Systems.png"
+                            alt="Operating Systems Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Operating Systems</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>OS</span><span>Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Systems -->
+                <div class="cert-card" data-category="core"
+                    onclick="openCert('certificates/Digital Systems From Logic Gates to Processors.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Digital Systems From Logic Gates to Processors.png"
+                            alt="Digital Systems Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Digital Systems</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>Logic</span><span>Hardware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computational Theory -->
+                <div class="cert-card" data-category="core" onclick="openCert('certificates/Computational Theory.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/Computational Theory.png" alt="Computational Theory Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Computational Theory</h3>
+                        <p class="issuer">Coursera</p>
+                        <div class="tags">
+                            <span>Theory</span><span>Automata</span><span>CS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="cert-card" data-category="general"
+                    onclick="openCert('certificates/HackWithVertos(Hackathon).png')">
+                    <div class="cert-image">
+                        <img src="certificates/HackWithVertos(Hackathon).png" alt="Hackathon Participation Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Hackathon Participation</h3>
+                        <p class="issuer">HackWithVertos</p>
+                        <div class="tags">
+                            <span>Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personality Development -->
+                <div class="cert-card" data-category="general"
+                    onclick="openCert('certificates/Personality Development.png')">
+                    <div class="cert-image">
+                        <img src="certificates/Personality Development.png" alt="Personality Development Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Personality Development</h3>
+                        <p class="issuer">Infosys</p>
+                        <div class="tags">
+                            <span>Soft Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Skills: Social Media (NEW) -->
+                <div class="cert-card" data-category="general"
+                    onclick="openCert('certificates/digital-skills-social-media.pdf')">
+                    <div class="cert-image">
+                        <img src="certificates/digital-skills-social-media.png" alt="Digital Skills Social Media Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Digital Skills: Social Media</h3>
+                        <p class="issuer">Accenture / FutureLearn</p>
+                        <div class="tags">
+                            <span>Social Media</span><span>Digital Marketing</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHAT NEXT -->
+    <section class="section">
+        <div class="container">
+
+            <p class="section-tag">CURRENTLY LEARNING</p>
+            <h1 class="page-title">What's Next</h1>
+
+            <div class="focus-grid">
+
+                <div class="focus-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Big Data Technologies</h3>
+                    <p>Learning Hadoop, Spark, and scalable data systems.</p>
+                </div>
+
+                <div class="focus-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Patent Research</h3>
+                    <p>Working on innovative ideas for patent filing.</p>
+                </div>
+
+                <div class="focus-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Advanced Data Science</h3>
+                    <p>Model deployment, optimization &amp; real-world ML systems.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="certModal" class="cert-modal">
+        <span class="close-btn" onclick="closeCert()">&times;</span>
+        <iframe id="certFrame"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/yash-vishwakarma200625" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Yashvishwakarma19" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:yashvishwakarma200625@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2026 Yash Vishwakarma &mdash; Engineered from scratch, refined with data</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
